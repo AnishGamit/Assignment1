@@ -18,8 +18,9 @@ func fun(n: Int) throws{
     print("n is odd")
   }
 }
+
 do{
-  try fun(n: 55)
+  try fun(n: -50)
 } catch{
   if let error = error as? Myerror{
     print(error.msg)
